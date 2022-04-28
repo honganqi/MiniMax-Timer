@@ -38,24 +38,27 @@
             this.timerDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F);
             this.timerDisplay.ForeColor = System.Drawing.Color.White;
             this.timerDisplay.Location = new System.Drawing.Point(0, 0);
+            this.timerDisplay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.timerDisplay.Name = "timerDisplay";
-            this.timerDisplay.Size = new System.Drawing.Size(369, 182);
+            this.timerDisplay.Size = new System.Drawing.Size(277, 148);
             this.timerDisplay.TabIndex = 0;
             this.timerDisplay.Text = "timer here";
             this.timerDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.timerDisplay.Click += new System.EventHandler(this.timerDisplay_Click);
-            this.timerDisplay.DoubleClick += new System.EventHandler(this.timerDisplay_DoubleClick);
+            this.timerDisplay.MouseMove += new System.Windows.Forms.MouseEventHandler(this.timerDisplay_MouseMove);
             // 
             // TimerWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(369, 182);
+            this.ClientSize = new System.Drawing.Size(277, 148);
             this.Controls.Add(this.timerDisplay);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TimerWindow";
             this.Text = "MiniMax Timer: timer";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TimerWindow_FormClosing);
             this.Load += new System.EventHandler(this.TimerWindow_FormLoad);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_KeyDown);
             this.ResumeLayout(false);
@@ -64,6 +67,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label timerDisplay;
+        public System.Windows.Forms.Label timerDisplay;
     }
 }

@@ -1,4 +1,4 @@
-# Shuffl3R Li
+# MiniMax Timer
  Customizable countdown timer
 
 The MiniMax Timer is a simple timer application which,

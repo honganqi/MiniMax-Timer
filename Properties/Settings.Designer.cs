@@ -12,7 +12,7 @@ namespace MiniMaxTimer.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.3.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -133,10 +133,10 @@ namespace MiniMaxTimer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Microsoft Sans Serif")]
-        public string font {
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI, 20pt")]
+        public global::System.Drawing.Font font {
             get {
-                return ((string)(this["font"]));
+                return ((global::System.Drawing.Font)(this["font"]));
             }
             set {
                 this["font"] = value;
@@ -157,7 +157,7 @@ namespace MiniMaxTimer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
         public global::System.Drawing.Color bgColor {
             get {
                 return ((global::System.Drawing.Color)(this["bgColor"]));
@@ -169,7 +169,7 @@ namespace MiniMaxTimer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
         public global::System.Drawing.Color fontColor {
             get {
                 return ((global::System.Drawing.Color)(this["fontColor"]));
@@ -188,6 +188,126 @@ namespace MiniMaxTimer.Properties {
             }
             set {
                 this["selectedscreen"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool displayHours {
+            get {
+                return ((bool)(this["displayHours"]));
+            }
+            set {
+                this["displayHours"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool displayMinutes {
+            get {
+                return ((bool)(this["displayMinutes"]));
+            }
+            set {
+                this["displayMinutes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool displaySeconds {
+            get {
+                return ((bool)(this["displaySeconds"]));
+            }
+            set {
+                this["displaySeconds"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string soundPath {
+            get {
+                return ((string)(this["soundPath"]));
+            }
+            set {
+                this["soundPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI, 20pt")]
+        public global::System.Drawing.Font pauseFont {
+            get {
+                return ((global::System.Drawing.Font)(this["pauseFont"]));
+            }
+            set {
+                this["pauseFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color pauseBgColor {
+            get {
+                return ((global::System.Drawing.Color)(this["pauseBgColor"]));
+            }
+            set {
+                this["pauseBgColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
+        public global::System.Drawing.Color pauseColor {
+            get {
+                return ((global::System.Drawing.Color)(this["pauseColor"]));
+            }
+            set {
+                this["pauseColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI, 20pt")]
+        public global::System.Drawing.Font endFont {
+            get {
+                return ((global::System.Drawing.Font)(this["endFont"]));
+            }
+            set {
+                this["endFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color endBgColor {
+            get {
+                return ((global::System.Drawing.Color)(this["endBgColor"]));
+            }
+            set {
+                this["endBgColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
+        public global::System.Drawing.Color endColor {
+            get {
+                return ((global::System.Drawing.Color)(this["endColor"]));
+            }
+            set {
+                this["endColor"] = value;
             }
         }
     }
