@@ -529,6 +529,7 @@ namespace MiniMaxTimer
             FontDialog fontdialog = new FontDialog
             {
                 ShowColor = true,
+                Font = selectedFont,
             };
             if (Properties.Settings.Default.fontColor != null)
             {
@@ -586,6 +587,7 @@ namespace MiniMaxTimer
             FontDialog fontdialog = new FontDialog
             {
                 ShowColor = true,
+                Font = pauseFont,
             };
             if (Properties.Settings.Default.pauseColor != null)
             {
@@ -624,6 +626,7 @@ namespace MiniMaxTimer
             FontDialog fontdialog = new FontDialog
             {
                 ShowColor = true,
+                Font = endFont,
             };
             if (Properties.Settings.Default.endColor != null)
             {
